@@ -1,11 +1,13 @@
 <table class="table table-striped">
     <thead>
-        <tr>Name</tr>
-        <th>Symbol</th>
-        <th>Current Price</th>
-        <% if @user.id == current_user.id %>
-        <th>Actions</th>
-        <% end %>
+        <tr>
+            <th>Name</th>
+            <th>Symbol</th>
+            <th>Current Price</th>
+            <% if @user.id == current_user.id %>
+            <th>Actions</th>
+            <% end %>
+        </tr>
     </thead>
     <tbody>
         <% @user_stocks.each do |user_stock| %>
